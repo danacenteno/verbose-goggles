@@ -1,0 +1,68 @@
+//MEDIA QUERIES
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .question {
+  	margin: 2vh;
+  	height: auto;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  header .header-container {
+  	h1{
+  		font-size: 60px;
+  	}
+
+  	img {
+  		margin-bottom: 5%;
+  		width: 60%;
+  	}
+
+  	button {
+  		margin-bottom: 15%;
+  	}
+  }
+
+  input[type="radio"] + span {
+  	margin: 15px;
+  }
+
+  .question p {
+  	font-size: 30px;
+  }
+
+  input[type="submit"] {
+  	margin-top: 10%;
+  }
+}
+
+@media (max-width: 560px) {
+  header .header-container {
+  	flex-direction: column;
+  	margin: 3%;
+  	padding: 3%;
+
+  	img {
+  		width: 80%;
+  	}
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+ header .header-container img {
+  	width: 100%;
+  }
+
+  input[type="radio"] + span {
+  	width: 200px;
+  }
+
+  .question {
+  	margin: auto;
+  }
+  	
+}

@@ -1,0 +1,436 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: #492910;
+  font-family: "montserrat", arial, sans-serif;
+  overflow: hidden-x;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/leaf-bg.png);
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  height: 100vh;
+  padding: 20px;
+}
+
+header .header-container {
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-container h1 {
+  font-size: 85px;
+  text-shadow: 1px 1px dimGray;
+}
+
+.get-started,
+#scrollResults,
+.reset {
+  font-size: 25px;
+  border: none;
+  background: #7B9E23;
+  color: #fff;
+  padding: 1% 3%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px dimGray;
+  transition: all 0.3s linear;
+}
+
+.get-started:hover,
+#scrollResults:hover,
+.reset:hover {
+  transform: scale(1.2);
+}
+
+.get-started:focus,
+#scrollResults:focus,
+.reset:focus {
+  outline: none;
+}
+
+.question {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 50px;
+  margin: 5vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question p {
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+.emoji {
+  width: 40%;
+}
+
+#quiz label {
+  position: relative;
+}
+
+#quiz label + label {
+  margin-left: 15px;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
+input[type="radio"] + span {
+  display: inline-block;
+  top: 50px;
+  color: #fff;
+  font-size: 20px;
+  background: #7B9E23;
+  font-family: "montserrat", arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  width: 250px;
+  margin: 20px;
+}
+
+input[type="radio"]:checked + span {
+  color: #7B9E23;
+  background-color: #CBEC01;
+}
+
+input[type="radio"]:hover + span {
+  color: #7B9E23;
+  background-color: #CBEC01;
+}
+
+input[type="submit"] {
+  background: #7B9E23;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 1% 2%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.sloths {
+  background: rgba(255, 255, 255, 0.8);
+  height: 90vh;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sloths h3 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.sloths img.gif {
+  width: 400px;
+  border: 7px solid #7B9E23;
+  padding: 1%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.result-container img.icon {
+  width: 15%;
+}
+
+.sloths p {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 1.7;
+  width: 60%;
+}
+
+.sloths p:first-of-type {
+  font-size: 30px;
+}
+
+p.description {
+  font-size: 16px;
+}
+
+.results {
+  margin-top: 80px;
+}
+
+footer {
+  width: 100vw;
+  background: #7B9E23;
+  padding: 10px 0;
+  margin-top: 80px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .question {
+    margin: 2vh;
+    height: auto;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  header .header-container h1 {
+    font-size: 60px;
+  }
+  header .header-container img {
+    margin-bottom: 5%;
+    width: 60%;
+  }
+  header .header-container button {
+    margin-bottom: 15%;
+  }
+  input[type="radio"] + span {
+    margin: 15px;
+  }
+  .question p {
+    font-size: 30px;
+  }
+  input[type="submit"] {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 560px) {
+  header .header-container {
+    flex-direction: column;
+    margin: 3%;
+    padding: 3%;
+  }
+  header .header-container img {
+    width: 80%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header .header-container img {
+    width: 100%;
+  }
+  input[type="radio"] + span {
+    width: 200px;
+  }
+  .question {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
