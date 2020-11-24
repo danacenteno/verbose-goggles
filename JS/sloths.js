@@ -35,7 +35,7 @@ $(function() {
 	});
 
 	// Refreshes page when button is clicked
-	$("#reset").on("click", function(){
+	$(".reset").on("click", function(){
 		// location.reload();
 		$("body").scrollTop(0);
 		console.log("hi?");
