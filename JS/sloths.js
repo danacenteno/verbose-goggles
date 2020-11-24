@@ -89,10 +89,8 @@ $(function() {
 		// Refreshes page when button is clicked
 		$(".reset").on("click", function(){
 			location.reload();
-			$("body").scrollTop(0);
-			// $("form").trigger("reset");
+			$("html, body").animate({ scrollTop: 0 }, "slow");
 		});
-
 		
 	});
 
