@@ -89,7 +89,7 @@ $(function() {
 		// Refreshes page when button is clicked
 		$(".reset").on("click", function(){
 			location.reload();
-			$(document).scrollTop();
+			$(document).scrollTop(0);
 		});
 		
 	});
